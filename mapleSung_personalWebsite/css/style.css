@@ -1,0 +1,160 @@
+@import 'https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,100;0,600;1,300&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #466180;
+  font-size: 16px;
+}
+
+/* div.menuBox: hover {
+  opacity: 0.5;
+} */
+
+nav.menu {
+  background: #466180;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #FFFBD9;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  color: #D3DAF2;
+}
+
+nav a:active {
+  color: #D7FCF4;
+}
+
+section.header_lrg {
+  background: url(../images/home@2x.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 70vh;
+  height: auto;
+}
+
+.header_lrg header {
+  text-align: center;
+  color: black;
+}
+
+.header_lrg h1 {
+  font-family: 'Gruppo', cursive;
+  font-size: 7em;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+.header_lrg h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+section.bio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 70vh;
+  height: auto;
+  background: #466180;
+  padding: 1em;
+}
+
+.bio article {
+  background: #8089A6;
+  padding: 4em;
+  width: 70%;
+}
+
+.bio h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #D3DAF2;
+}
+
+.bio h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  /* font-stretch: condensed; */
+  font-size: 4em;
+  text-transform: lowercase;
+  color: #FFFBD9;
+}
+
+.bio p {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+section.selfCol4x {
+  justify-content: flex-end;
+  padding: 3em 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+
+section.self {
+  background: #8089A6;
+  flex: 1;
+}
+
+figure img {
+  width: 100%;
+}
+
+div.stats {
+  background: #466180;
+  color: black;
+  padding: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 0.5em;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section footer {
+  background: url(../images/feet.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
