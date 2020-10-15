@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* background color */
+body {
+background-color: #466180;
+font-family: impact, helvetica, monospace;
+}
+
+header h1 {
+font-size: 100px;
+color: #D3DAF2;
+text-transform: lowercase;
+text-align: left;
+text-transform: capitalize;
+letter-spacing: 15px;
+padding: 4% 10% 4%;
+}
+
+header h2 {
+  font-family: helvetica, inherit, sans-serif;
+  font-size: 50;
+  color: #8095D9;
+  letter-spacing: 10px;
+  padding: 0% 10% 3%;
+}
+
+nav a:link  {
+    color: black;
+    text-transform: lowercase;
+    font-family: helvetica, serif, monospace;
+    font-size: 20px;
+    /* text-align doens't work */
+    text-align: center;
+    margin-left: 20px;
+  }
+
+nav a:visited {
+  color: #D7FCF4;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a:active {
+  color: #D3DAF2;
+}
+
+article {
+  padding: 4%;
+}
+
+article h2 {
+  font-size: 50px;
+  color: #D3DAF2;
+  margin-bottom: 2%;
+}
+
+article h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 1%;
+}
+
+article p {
+  font-family: helvetica, serif, monospace;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 2%;
+}
+
+.pullQuote {
+  background-color: #8089A6;
+  color: #B5A874;
+  font-size: 40px;
+  padding: 4%;
+  margin: 0, 2%, 1%;
+  font-family: : times, serif, georgia;
+  font-style: italic;
+}
+
+article figure {
+  margin-bottom: 3%;
+  width: 40%;
+  float: left;
+  margin-right: 4%;
+}
+
+article figure img {
+  width: 100%;
+}
+
+article nav a:link  {
+    color: black;
+    text-transform: lowercase;
+    font-family: monospace, serif, times;
+    font-size: 15px;
+    /* text-align doens't work */
+    text-align: center;
+    margin-left: 20px;
+  }
+
+article nav a:visited {
+  color: #FCE0D7;
+}
+
+article nav a:hover {
+  color: black;
+}
+
+article nav a:active {
+  color: #F2EAD3;
+}
+
+figure {
+  margin-bottom: 3%;
+  width: 40%;
+  float: right;
+  margin-right: 4%;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 15px;
+  color: #222336;
+  font-family: : georgia, times, serif;
+  font-style: italic;
+  text-align: left;
+}
+
+footer {
+  padding: 2%;
+  color: blanchedalmond;
+  font-size: 18px;
+  text-align: center;
+}
