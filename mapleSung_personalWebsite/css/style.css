@@ -60,7 +60,6 @@ section.header_lrg {
 
 .header_lrg header {
   text-align: center;
-  color: black;
 }
 
 .header_lrg h1 {
@@ -68,6 +67,7 @@ section.header_lrg {
   font-size: 7em;
   text-transform: lowercase;
   font-weight: bold;
+  color: #D3DAF2;
 }
 
 .header_lrg h2 {
@@ -80,9 +80,8 @@ section.header_lrg {
 
 section.bio {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   min-height: 70vh;
   height: auto;
   background: #466180;
@@ -115,26 +114,27 @@ section.bio {
 .bio p {
   font-family: 'Raleway', sans-serif;
   font-style: italic;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 2em;
   margin-top: 2em;
   margin-bottom: 1em;
 }
 
 section.selfCol4x {
-  justify-content: flex-end;
   padding: 3em 1em;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   align-items: flex-end;
 }
 
-section.self {
-  background: #8089A6;
-  flex: 1;
+section.self{
+  background: #466180;
+  display: flex;
+  align-items: center;
+  width: 30%;
 }
 
-figure img {
+.bio img {
   width: 100%;
 }
 
@@ -144,17 +144,55 @@ div.stats {
   padding: 1em;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
-  font-size: 0.5em;
+  font-size: 1em;
   text-transform: capitalize;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
 }
 
-section footer {
-  background: url(../images/feet.jpg) fixed center center no-repeat;
-  background-size: cover;
+section.reflections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #466180;
+  padding: 1em;
+  }
+
+.reflections h2 {
+  font-family: 'Gruppo', cursive;
+  font-size: 2em;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #D3DAF2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reflections a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #ffc9c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section.foot {
+  background: url(../images/feet.jpg) center no-repeat;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  height: auto;
+}
+
+.foot footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 0.8em;
+  text-transform: capitalize;
 }
