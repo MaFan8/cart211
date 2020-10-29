@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,100;0,600;1,300&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,100;0,600;1,300&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap";
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@ body {
 nav.menu {
   background: #466180;
   padding: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 1em;
   display: flex;
@@ -32,7 +32,7 @@ a {
 }
 
 nav a:link {
-  color: #FFFBD9;
+  color: #fffbd9;
 }
 
 nav a:visited {
@@ -40,11 +40,11 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #D3DAF2;
+  color: #d3daf2;
 }
 
 nav a:active {
-  color: #D7FCF4;
+  color: #d7fcf4;
 }
 
 section.header_lrg {
@@ -63,15 +63,15 @@ section.header_lrg {
 }
 
 .header_lrg h1 {
-  font-family: 'Gruppo', cursive;
+  font-family: "Gruppo", cursive;
   font-size: 7em;
   text-transform: lowercase;
   font-weight: bold;
-  color: #D3DAF2;
+  color: #d3daf2;
 }
 
 .header_lrg h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   line-height: 1em;
   text-transform: uppercase;
@@ -89,30 +89,30 @@ section.bio {
 }
 
 .bio article {
-  background: #8089A6;
+  background: #8089a6;
   padding: 4em;
   width: 70%;
 }
 
 .bio h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: lighter;
   text-transform: uppercase;
-  color: #D3DAF2;
+  color: #d3daf2;
 }
 
 .bio h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   /* font-stretch: condensed; */
   font-size: 4em;
   text-transform: lowercase;
-  color: #FFFBD9;
+  color: #fffbd9;
 }
 
 .bio p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 1.2em;
   line-height: 2em;
@@ -127,7 +127,7 @@ section.selfCol4x {
   align-items: flex-end;
 }
 
-section.self{
+section.self {
   background: #466180;
   display: flex;
   align-items: center;
@@ -142,7 +142,7 @@ div.stats {
   background: #466180;
   color: black;
   padding: 1em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 1em;
   text-transform: capitalize;
@@ -153,30 +153,33 @@ div.stats {
 section.reflections {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   background: #466180;
   padding: 1em;
-  }
+}
 
 .reflections h2 {
-  font-family: 'Gruppo', cursive;
+  font-family: "Gruppo", cursive;
   font-size: 2em;
   text-transform: lowercase;
   font-weight: bold;
-  color: #D3DAF2;
+  color: #d3daf2;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
 
 .reflections a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: lighter;
   text-transform: uppercase;
   color: #ffc9c9;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
 }
 
@@ -191,7 +194,7 @@ section.foot {
 }
 
 .foot footer {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 0.8em;
   text-transform: capitalize;
