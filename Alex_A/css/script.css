@@ -1,0 +1,172 @@
+@import "https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,100;0,600;1,300&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background: #f7f7f7;
+}
+
+.cover {
+  max-width: 100%;
+  height: 100vh;
+  background: url(../images/amazonSite.jpg) no-repeat fixed left center;
+  background-size: cover;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  /* grid-gap: 2rem; */
+}
+
+.cover span.circle1 {
+  width: 10vmin;
+  height: 10vmin;
+  background: #6ac396;
+  opacity: 80%;
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 2;
+  margin: auto;
+  animation: pulse 2s infinite ease-in-out alternate;
+}
+
+.cover span.circle2 {
+  width: 10vmin;
+  height: 10vmin;
+  background: #6ac396;
+  opacity: 80%;
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 3;
+  margin: auto;
+  animation: pulse 2s infinite ease-in-out alternate;
+  animation-delay: 0.3s;
+}
+
+.cover span.circle3 {
+  width: 10vmin;
+  height: 10vmin;
+  background: #6ac396;
+  opacity: 80%;
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 4;
+  margin: auto;
+  animation: pulse 2s infinite ease-in-out alternate;
+  animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.essay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3.5em 1em;
+  min-height: 100vh;
+  height: auto;
+  background: #d9e2de;
+}
+
+.essay article {
+  width: 70%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: #adcde9;
+  border-radius: 10px;
+  margin-right: 2em;
+  opacity: 1;
+  /* transition: all 0.5s ease-in; */
+  animation: slider 2s;
+  padding: 2.5em;
+  text-transform: capitalize;
+}
+
+/* .essay:hover article {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: #adcde9;
+  visibility: visible;
+  opacity: 1;
+} */
+
+h1 {
+  padding: 1em;
+}
+
+h2 {
+  padding: 1em;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  text-transform: none;
+  text-indent: 10%;
+  color: #003147;
+  font-size: 1em;
+  line-height: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+span {
+  text-indent: 30%;
+}
+
+nav.menu {
+  background: transparent;
+  display: flex;
+  flex-grow: 1;
+  padding: 3.5em 1em;
+  flex-direction: column;
+  font-family: "monospace", sans-serif;
+  font-weight: lighter;
+  text-transform: lowercase;
+  animation: slider 2s;
+}
+
+a {
+  /* background: #adcde9; */
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
+a:link {
+  color: #1f3c3d;
+}
+a:visited {
+  color: #adcde9;
+}
+a:hover {
+  color: #f7f7f7;
+}
+a:active {
+  background: #f7a4a1;
+  opacity: 0.5;
+}
+
+@keyframes slider {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
