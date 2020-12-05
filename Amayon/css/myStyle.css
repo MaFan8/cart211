@@ -1,0 +1,381 @@
+@import "https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,100;0,600;1,300&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap";
+
+/* @media (min-width: 768px) {
+  .pull-right-sm {
+    float: right !important;
+  }
+  .pull-left-sm {
+    float: left !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .pull-right-md {
+    float: right !important;
+  }
+  .pull-left-md {
+    float: left !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pull-right-lg {
+    float: right !important;
+  }
+  .pull-left-lg {
+    float: left !important;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Navigation */
+section.parent_navbar {
+  display: flex;
+  position: static;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.navbar_lrg {
+  display: flex;
+  position: static;
+  align-items: center;
+  flex-flow: row nowrap;
+  background-color: #361a1e;
+  min-height: 60px;
+  z-index: 1030;
+}
+
+/* ===== toggle MENU INFO ===== */
+#trigger {
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid #666;
+  border-radius: 3px;
+  height: 40px;
+  z-index: 9;
+  color: #fff;
+  margin: 10px 10px;
+  padding: 6px 6px;
+}
+#trigger:hover {
+  color: cadetblue;
+}
+
+.toggle {
+  height: 100%;
+  width: 360px;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.toggle-content {
+  display: flex;
+  flex-flow: column wrap;
+  flex-wrap: wrap;
+  position: absolute;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.toggle-content a.hello {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #fff;
+  background: #4d291d;
+}
+
+.toggle-content a:hover,
+.toggle-content a:focus {
+  color: #fff;
+  background: #222;
+}
+
+.toggle a span {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  transform: rotate(0deg);
+  transform-origin: left top;
+}
+
+.closebtn {
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  right: 10px;
+  font-size: 20px !important;
+  line-height: 0px;
+  cursor: pointer;
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.closebtn:hover {
+  color: #222;
+}
+
+.toggle-content a {
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 14px;
+  color: #000;
+  transition: all 0.5s;
+  text-transform: capitalize;
+  font-weight: normal;
+  /* flex: 1 100%; */
+  padding: 13px 36px;
+  align-items: center;
+}
+
+/* search bar */
+.searchbar {
+  position: relative;
+  margin-left: 50px;
+  padding: 10px 4px 10px 3px;
+  flex-grow: 3;
+  min-width: 400px;
+}
+
+.searchbar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  background: #f1f1f1;
+  margin: auto;
+  width: 90%;
+}
+
+.searchbar button {
+  padding: 10px;
+  background: #f3a847;
+  color: white;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  border-left: none;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background: #e2a847;
+}
+
+.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* dropdown */
+.dropdown {
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.nav-line h3,
+i {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.nav-line h2 {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.nav-line h4 {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 300;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  padding: 0px 5px;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* orders */
+.nav-main {
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 10;
+  padding: 0px 5px;
+  margin: 0px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-main:hover {
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+
+/* cart */
+.cart {
+  padding: 5px;
+  margin: 0px 20px 0px 0px;
+}
+@media screen and (max-height: 450px) {
+  .toggle a {
+    font-size: 20px;
+  }
+  .closebtn {
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#logo img {
+  position: static;
+  height: 25px;
+  min-width: 100px;
+  margin-bottom: 10px;
+  z-index: 10;
+}
+/* End navbar_lrg */
+
+/* navbar_sm */
+.navbar_sm {
+  display: flex;
+  position: static;
+  align-items: center;
+  flex-flow: row nowrap;
+  background-color: #4d291d;
+  min-height: 37px;
+  z-index: 1030;
+}
+
+/* delivery */
+.delivery {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.delivery:hover {
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+
+.fa-map-marker-alt {
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.deals {
+  margin-left: 100px;
+}
+
+.covid {
+  padding: 5px 8px 6px 8px;
+  margin-left: 200px;
+}
+
+/* ===== TABLET LAYOUT ===== */
+/* 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+  .toggle a {
+    flex: 1 auto;
+    /* font-size: 72px; */
+    /*	border:1px solid red;*/
+  }
+  .toggle a:hover,
+  .toggle a:focus {
+    flex: 2 auto;
+  }
+  .toggle a span {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+  }
+
+  #logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* .multi {
+    column-count: 3;
+  } */
+}
+
+/* ===== DESKTOP LAYOUT ===== */
+/* Desktop Layout: 769px to a max of 1200px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+  #logo img {
+    width: 50px;
+    height: 1 auto;
+  }
+}

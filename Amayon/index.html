@@ -1,3 +1,7 @@
+<!--
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,8 +9,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Amayon</title>
+
+    <!-- libairies -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    /> -->
+
+    <!-- styleshteets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
   </head>
+
   <body>
-    <header id="navbar-main" class="nav-flex"></header>
+    <!-- Navigation Section -->
+    <section class="parent_navbar">
+      <nav class="navbar_lrg">
+        <!-- toggle -->
+        <nav id="myNav" class="toggle">
+          <div id="close" class="closebtn">x</div>
+
+          <ul class="toggle-content">
+            <li>
+              <a href="#" class="hello">Hello, Sign in</a>
+            </li>
+
+            <a href="#" class="toggle-menu-subtitle">digital content</a>
+            <a href="#">amayon choonz</a>
+
+            <a href="#">swindle reader</a>
+            <a href="#">appboutique</a>
+          </ul>
+        </nav>
+
+        <span id="trigger">☰</span>
+
+        <!-- logo -->
+        <a href="#" id="logo"
+          ><img src="images/amayon.png" alt="amayon logo"
+        /></a>
+
+        <!-- search bar -->
+        <form action="" class="searchbar">
+          <input
+            type="text"
+            placeholder="Find something..."
+            class="search-field"
+          /><button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <!-- Account Dropdown menu -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span class="nav-line">
+              <h3>Hello, Sign in</h3>
+              <h2>Account <i class="fa fa-caret-down"></i></h2>
+            </span>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <!-- Returns & Orders -->
+        <a href="#" class="nav-main">
+          <span class="nav-line">
+            <h3>Returns</h3>
+            <h2>& Orders</h2>
+          </span>
+        </a>
+
+        <!-- Shopping Cart -->
+        <a href="#" class="nav-main cart">
+          <i class="fas fa-shopping-cart"> 0</i>
+          <span class="nav-line">
+            <h2>Cart</h2>
+          </span>
+        </a>
+      </nav>
+
+      <nav class="navbar_sm">
+        <a href="#" class="nav-main delivery"
+          ><i class="fas fa-map-marker-alt"></i>
+          <span class="nav-line">
+            <h4>Deliver to</h4>
+            <h2>Canada</h2>
+          </span>
+        </a>
+
+        <a href="#" class="nav-main nav-line deals">
+          <h3>Deals</h3>
+        </a>
+        <a href="#" class="nav-main nav-line customer">
+          <h3>Customer Service</h3>
+        </a>
+        <a href="#" class="nav-main nav-line gifts">
+          <h3>Gift Cards</h3>
+        </a>
+        <a href="#" class="nav-main nav-line sell">
+          <h3>Sell</h3>
+        </a>
+        <a href="#" class="nav-main nav-line registry">
+          <h3>Registry</h3>
+        </a>
+
+        <a href="#" class="nav-main nav-line covid">
+          <h2>Amayon's response to COVID-19</h2>
+        </a>
+      </nav>
+    </section>
+    <!-- END Navigation Section -->
+
+    <!-- header -->
+    <main>
+      <header class="main-tab">
+        <h3>shop devices</h3>
+        <h3>use Alexa</h3>
+        <h1>Alexa User Guide: Learn What Alexa Can Do</h1>
+      </header>
+    <!-- scripts -->
+    <script src="javascript/menu.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
 </html>
