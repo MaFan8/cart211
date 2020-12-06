@@ -82,7 +82,7 @@ section.parent_navbar {
 
 .toggle {
   height: 100%;
-  width: 360px;
+  width: 0;
   position: fixed;
   z-index: 11;
   top: 0;
@@ -93,15 +93,20 @@ section.parent_navbar {
 }
 
 .toggle-content {
-  display: flex;
+  /* display: flex;
   flex-flow: column wrap;
-  flex-wrap: wrap;
-  position: absolute;
+  flex-wrap: wrap; */
+  display: inline;
+  /* position: absolute; */
   padding-bottom: 5px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.toggle-content li {
+  display: inline-block;
 }
 
 .toggle-content a.hello {
@@ -145,8 +150,8 @@ section.parent_navbar {
 }
 
 .toggle-content a {
-  position: relative;
-  text-decoration: none;
+  /* position: relative; */
+  /* text-decoration: none;
   font-size: 17px;
   line-height: 14px;
   color: #000;
@@ -154,8 +159,8 @@ section.parent_navbar {
   text-transform: capitalize;
   font-weight: normal;
   /* flex: 1 100%; */
-  padding: 13px 36px;
-  align-items: center;
+  /* padding: 13px 36px;
+  align-items: center; */
 }
 
 /* search bar */
@@ -245,6 +250,9 @@ i {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+.dropdown:visited .dropdown-content {
+  display: block;
 }
 
 .dropdown-content a {
