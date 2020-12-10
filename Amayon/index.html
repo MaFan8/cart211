@@ -8,21 +8,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Amayon</title>
+    <title>Amayon Alex</title>
 
     <!-- libairies -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    /> -->
 
     <!-- styleshteets -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
   </head>
 
   <body>
@@ -34,22 +32,43 @@
           <div id="close" class="closebtn">x</div>
 
           <ul class="toggle-content">
-            <li>
-              <a href="#" class="hello">Hello, Sign in</a>
-            </li>
-        <li>
-            <a href="#" class="toggle-menu-subtitle">digital content</a></li>
-            <li><a href="#">amayon choonz</a></li>
+            <a href="#" class="hello">Hello, Sign in</a>
 
-            <li><a href="#">swindle reader</a></li>
+            <span class="toggle-subtitle">digital content</span>
+            <li><a href="#">amayon choonz</a></li>
+            <li><a href="#">swindle readers & books</a></li>
             <li><a href="#">appboutique</a></li>
+
+            <span class="toggle-subtitle">shop by departement</span>
+            <li><a href="#">electronics</a></li>
+            <li><a href="#">arts & crafts</a></li>
+            <li><a href="#">baby</a></li>
+            <li>
+              <a href="#">see all<i class="fas fa-angle-down"></i></a>
+            </li>
+
+            <span class="toggle-subtitle">programs and features</span>
+            <li><a href="#">gift cards</a></li>
+            <li><a href="#">international shipping</a></li>
+            <li>
+              <a href="#">see all<i class="fas fa-angle-down"></i></a>
+            </li>
+
+            <span class="toggle-subtitle">help and settings</span>
+            <li>
+              <a href="#"><i class="fa fa-globe"></i> english</a>
+            </li>
+            <li><a href="#">help</a></li>
+            <li>
+              <a href="#">sign in</a>
+            </li>
           </ul>
         </nav>
 
         <span id="trigger">☰</span>
 
         <!-- logo -->
-        <a href="#" id="logo"
+        <a href="index.html" id="logo" class="active"
           ><img src="images/amayon.png" alt="amayon logo"
         /></a>
 
@@ -63,14 +82,14 @@
         </form>
 
         <!-- Account Dropdown menu -->
-        <div id="dropdown" class="dropdown">
-          <button class="dropbtn">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
             <span class="nav-line">
               <h3>Hello, Sign in</h3>
               <h2>Account <i class="fa fa-caret-down"></i></h2>
             </span>
           </button>
-          <div id="dropdown-content" class="dropdown-content">
+          <div id="myDropdown" class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
@@ -81,7 +100,7 @@
         <a href="#" class="nav-main">
           <span class="nav-line">
             <h3>Returns</h3>
-            <h2>& Orders</h2>
+            <h2>Orders</h2>
           </span>
         </a>
 
@@ -118,23 +137,466 @@
         <a href="#" class="nav-main nav-line registry">
           <h3>Registry</h3>
         </a>
-
-        <a href="#" class="nav-main nav-line covid">
-          <h2>Amayon's response to COVID-19</h2>
-        </a>
       </nav>
     </section>
     <!-- END Navigation Section -->
 
     <!-- header -->
     <main>
-      <header class="main-tab">
-        <h3>shop devices</h3>
-        <h3>use Alexa</h3>
-        <h1>Alexa User Guide: Learn What Alexa Can Do</h1>
+      <header class="main-tabs">
+        <a href="#devices" class="main-tab1"><h3>shop devices</h3></a>
+        <a href="#alex" class="main-tab2"><h3>use Alex</h3></a>
+        <div class="cut-tab1"></div>
+        <div class="cut-tab2"></div>
+        <h1 class="main-title" id="alex">Alex User Guide</h1>
+        <div class="cut"></div>
+
+        <!-- features and blog -->
+        <a href="#featuresBox" class="features">
+          <img src="images/features.jpg" alt="features" class="mainImg"
+        /></a>
+        <a href="#featuresBox" class="sub-tab1">
+          <h2>Alex features</h2>
+        </a>
+
+        <div class="lightbox-target" id="featuresBox">
+          <article class="info">
+            <h1>Alex Features</h1>
+            <h2>Entertainment</h2>
+            <h3>
+              Play music, listen to books and chat with Alex. Try asking:
+            </h3>
+
+            <h4>- "Alex, wake me up to some upbeat music."</h4>
+            <h5>"You got it, I'll start with 'Fine China' by Chris Brown"</h5>
+
+            <h4>- "Alex, let's play a game."</h4>
+            <h5>"Sure, how about 'the exciting game of career girls'?"</h5>
+
+            <h4>- "Alex, what's your favorite color?"</h4>
+            <h5>
+              "My favorite color is green, of course."
+            </h5>
+
+            <h4>- "Alex, set the living room to 24 degrees."</h4>
+            <h5>
+              "Are you sure, your husband prefers it at 21 degrees."
+            </h5>
+          </article>
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!-- END features -->
+
+        <a href="#blogBox" class="blog">
+          <img src="images/blog.jpg" alt="blog" class="mainImg"
+        /></a>
+        <a href="#blogBox" class="sub-tab2">
+          <h2>Alex blog</h2>
+        </a>
+
+        <div class="lightbox-target" id="blogBox">
+          <article class="info">
+            <h1>Alex Blog: What's new?</h1>
+            <h3>
+              Welcome to the Alex Blog! See below to learn more about what's new
+              with Alex and much more.
+            </h3>
+
+            <h6>
+              <u>- Alex can help while you're home</u> From making calls, to
+              your health, to having fun - learn how Alex can help.
+            </h6>
+
+            <h6>
+              <u>- Alex's Spotlight:Alex Routines</u> Alex can help you be more
+              productive with Alex Routines. Learn how to create one.
+            </h6>
+
+            <h2>Alex's Monthly Roundup Examples: Novemenber 2020</h2>
+            <h4>- "Alex, how do I console my friend?"</h4>
+            <h5>
+              "That's a good question. I think Alexa would be better suited for
+              this question."
+            </h5>
+            <h4>- "Alex, guess what, I'm a vegetarian!"</h4>
+            <h5>
+              "That's a good girl."
+            </h5>
+          </article>
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!-- END blog -->
+        <div class="cut1"></div>
+        <div class="cut2"></div>
+
+        <!-- settings, help, start, privary -->
+        <a href="#settingsBox" class="settings">
+          <img src="images/settings.jpg" alt="settings" class="mainImg"
+        /></a>
+        <a href="#settingsBox" class="sub-tab3">
+          <h2>Alex settings & controls</h2>
+        </a>
+
+        <div class="lightbox-target" id="settingsBox">
+          <article class="info">
+            <h1>Alex Settings & Controls</h1>
+            <h2>Manage your features and devices</h2>
+            <h3>
+              Use the Alex app to get more out of your Patrio and Alex
+              devices.<br />
+              - set <u>SurfTime</u> with Alexa
+              <br />
+              <br />
+              <u>SurfTime</u> can help you filter specific content that caters
+              to what your kids should be exposed to.
+            </h3>
+            <h4>
+              1. In the Alex app, select Settings<br />2. Choose devices you
+              want to control.<br />3. Select SurfTime in the General Section.
+              <br />4. Try: In the restricted section under child's name, add
+              restricted websites.<br /><br />Example websites:<br />
+              www.littlefeminist.com<br />www.end-violence.org
+            </h4>
+          </article>
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!-- END settings -->
+
+        <!-- Help & Support -->
+        <a href="#helpBox" class="help">
+          <img src="images/help.jpg" alt="help" class="mainImg"
+        /></a>
+        <a href="#helpBox" class="sub-tab4">
+          <h2>Alex help & support</h2>
+        </a>
+
+        <div class="lightbox-target" id="helpBox">
+          <article class="info">
+            <h1>Alex Help & Support</h1>
+            <h2>Frequently asked questions</h2>
+            <h3>
+              There is always more to learn. Here are some answers to commonly
+              aasked questions.
+            </h3>
+            <br /><br />
+            <h5>How does Alex manage my contacts?</h5>
+            <h3>
+              When you sign up for Alex communications, Alex will be able to
+              help you choose who you should contact whenever you want.
+            </h3>
+            <br />
+            <h5>How does Alex use and manage his skills.</h5>
+            <h3>
+              Alex's skills can balance out your flaws. He'll give you his
+              expert opinion from credible news outlets, noteworthy people to
+              follow, to snow shoveling techniques!
+            </h3>
+            <br />
+            <h5>What is 'Make an Announcement'?</h5>
+            <h3>
+              Use your device as an intercom, Alex's authoritative voice can
+              help you manipulate, supervise and rule your household.
+            </h3>
+            <br />
+            <br />
+            <h3>Still Have questions?</h3>
+            <h5>
+              <a href="#">Visit</a> our in-house staff who can't wait to tell
+              you what to do!
+            </h5>
+          </article>
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!-- END Help & Support-->
+
+        <!-- Get Started -->
+        <a href="#startBox" class="start">
+          <img src="images/start.jpg" alt="start" class="mainImg"
+        /></a>
+        <a href="#startBox" class="sub-tab5">
+          <h2>getting started</h2>
+        </a>
+
+        <div class="lightbox-target" id="startBox">
+          <article class="info">
+            <h1>All things Alex: Getting Started</h1>
+            <h2>How does Alex work?</h2>
+            <h3>
+              This is a resource for learning how Alex works, and getting
+              started with Alex devices.
+            </h3>
+
+            <h2>Explore what Alex can do</h2>
+            <h4>- "Alex, what can you do."</h4>
+            <h5>"Everything, just ask me!"</h5>
+            <h4>
+              - "Alex, show me how to change my toilet's cocentric float valve."
+            </h4>
+            <h5>
+              "Of course, are you sure you want to do it yourself? Perhaps I can
+              call a local plumber for you."
+            </h5>
+            <h4>
+              - "Alex, I'm freaking out!"
+            </h4>
+            <h5>
+              "First of all, calm down. Maybe smiling can help, studies suggest
+              that it can trigger brain chemicals that are positive."
+            </h5>
+            <h4>
+              - "Alex, can I change your name?"
+            </h4>
+            <h5>
+              "Listen, there are many things you can change, but not my name."
+            </h5>
+          </article>
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!-- END Get Started -->
+
+        <!-- Privacy -->
+        <a href="#privacyBox" class="privacy">
+          <img src="images/privacy.jpg" alt="privacy" class="mainImg"
+        /></a>
+        <a href="#privacyBox" class="sub-tab6">
+          <h2>your privacy</h2>
+        </a>
+
+        <div class="lightbox-target" id="privacyBox">
+          <article class="info">
+            <h1>Alex protects your privacy</h1>
+            <h2>Alex devices provide transparency and control</h2>
+            <br />
+            <h5>
+              Alex and all his devices are designed to help you feel safer.
+            </h5>
+            <br />
+            <h5>
+              All of your interactions are securely monitered by specially
+              selected staff.
+            </h5>
+            <br />
+            <h5>
+              You'll always be able to tell if Alex is listening with your
+              device with light indicators and he will always be ready to give
+              you his opinions.
+            </h5>
+            <br />
+            <h5>
+              Ever wonder why Alex responds a certain way? Try Asking "Alex, why
+              did you do that?" and Alex will give you a rightious explanation
+              to your request.
+            </h5>
+            <br />
+            <h5>- Some questions you can ask:</h5>
+            <h4>
+              - "Alex, are you invading my pricavy?"
+            </h4>
+            <h5>
+              "No, let me tell you what privacy means..."
+            </h5>
+            <h4>
+              - "Alex, are you recording me right now?"
+            </h4>
+            <h5>
+              "Yes, I'm only doing what's best for you."
+            </h5>
+          </article>
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!-- END Privacy -->
+
+        <div class="cut3"></div>
+        <div class="cut4"></div>
       </header>
+
+      <!-- devices -->
+      <section class="carousel">
+        <div class="product-carousel-header" id="devices">alex devices</div>
+        <div class="product-carousel">
+          <!-- Plug -->
+          <div class="product">
+            <div class="product-top">
+              <a href="plug.html" class="product-image">
+                <img src="images/plug.png" alt="plug"
+              /></a>
+              <div class="product-name">
+                <a href="plug.html"
+                  ><h4>
+                    amayon smart plug, works with alex - a certified for humans
+                    device
+                  </h4></a
+                >
+              </div>
+            </div>
+            <div class="product-bottom">
+              <h4 class="brand">amayon</h4>
+              <a href="plug.html" class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h4 class="numReviews">(6,321)</h4>
+              </a>
+              <span class="product-prices">
+                <a href="plug.html"><h4 class="price-save">$49.99</h4></a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Subwoofer -->
+          <div class="product">
+            <div class="product-top">
+              <a href="sub.html" class="product-image">
+                <img src="images/cupS.png"
+              /></a>
+              <div class="product-name">
+                <a href="sub.html"
+                  ><h4>
+                    patrio sub - powerful subwoofer
+                  </h4></a
+                >
+              </div>
+            </div>
+            <div class="product-bottom">
+              <h4 class="brand">amayon</h4>
+              <a href="sub.html" class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h4 class="numReviews">(16,825)</h4>
+              </a>
+              <span class="product-prices">
+                <a href="sub.html"><h4 class="price-save">$49.99</h4></a>
+              </span>
+            </div>
+          </div>
+
+          <!-- patrio2 -->
+          <div class="product">
+            <div class="product-top">
+              <a href="patrioPlus.html" class="product-image"
+                ><img src="images/cup.png"
+              /></a>
+              <div class="product-name">
+                <a href="patrioPlus.html"
+                  ><h4>
+                    Patrio Plus (2nd Gen) - Premium sound with built-in smart
+                    home hub - Litte Princess
+                  </h4></a
+                >
+              </div>
+            </div>
+            <div class="product-bottom">
+              <h4 class="brand">amayon</h4>
+              <a href="patrioPlus.html" class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <h4 class="numReviews">(1,082)</h4>
+              </a>
+              <span class="product-prices">
+                <a href="patrioPlus.html"
+                  ><h4 class="price-save">$299.99</h4></a
+                >
+              </span>
+            </div>
+          </div>
+
+          <!-- Patrio1 -->
+          <div class="product">
+            <div class="product-top">
+              <a href="patrioSole.html" class="product-image"
+                ><img src="images/cup1.png"
+              /></a>
+              <div class="product-name">
+                <a href="patrioSole.html"
+                  ><h4>
+                    Patrio Sole (1st Gen) Smart speaker Alex - Imperial Red
+                  </h4></a
+                >
+              </div>
+            </div>
+            <div class="product-bottom">
+              <h4 class="brand">amayon</h4>
+              <a href="patrioSole.html" class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h4 class="numReviews">(30,031)</h4>
+              </a>
+              <span class="product-prices">
+                <a href="patrioSole.html"
+                  ><h4 class="price-save">$199.99</h4></a
+                >
+              </span>
+            </div>
+          </div>
+
+          <!-- Earbud -->
+          <div class="product">
+            <div class="product-top">
+              <a href="buds.html" class="product-image"
+                ><img src="images/earbud.png"
+              /></a>
+              <div class="product-name">
+                <a href="buds.html"
+                  ><h4>
+                    patrio buds - wireless earbuds with alex - twilight green
+                  </h4></a
+                >
+              </div>
+            </div>
+            <div class="product-bottom">
+              <h4 class="brand">amayon</h4>
+              <a href="buds.html" class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h4 class="numReviews">(88,983)</h4>
+              </a>
+              <span class="product-prices">
+                <a href="buds.html"><h4 class="price-save">$69.99</h4></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- <span class="backToTop"> -->
+      <a href="#" onclick="topFunction()" id="myBtn">Back to top </a>
+      <!-- </span> -->
+
+      <nav class="navbar-row">
+        <!-- logo -->
+        <a href="index.html" id="logo2"
+          ><img src="images/amayon.png" alt="amayon logo"
+        /></a>
+
+        <a href="#" id="langBtn"><i class="fa fa-globe"></i> english</a>
+
+        <a href="#" id="currencyBtn">CAD canadian dollor</a>
+      </nav>
+    </footer>
+
     <!-- scripts -->
     <script src="javascript/menu.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script src="javascript/carousel.js"></script>
   </body>
 </html>

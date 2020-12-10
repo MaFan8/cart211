@@ -1,0 +1,2 @@
+# Flex Product Carousel (Using Slick Carousel)
+Copyright (c) 2020 by James Lane (https://codepen.io/jameslane/pen/KmXXoJ)

@@ -1,0 +1,170 @@
+main.second {
+  height: 100vmin;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: auto;
+  border-bottom: 2px solid #eee;
+}
+
+.tab {
+  padding: 0px 80px;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo img {
+  background-color: #d8d8f2;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 3;
+  position: static;
+  width: 300vmin;
+  height: auto;
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+.productInfo .brand {
+  font-size: 12px;
+}
+
+.productList li {
+  font-size: 12px;
+  text-transform: none;
+}
+h5 {
+  font-size: 11px;
+  margin-top: -10px;
+}
+.stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+  position: static;
+  width: 250px;
+  height: 300px;
+  border: 0.5px solid #000;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.stock h4 {
+  font-size: 18px;
+  color: red;
+  margin: 0;
+}
+
+.stock h5 {
+  font-size: 12px;
+  color: grey;
+  margin: 0;
+}
+
+.stock .inStock {
+  font-size: 18px;
+  color: #134c12;
+  margin: 0;
+}
+
+#num {
+  display: inline-block;
+  border: 0.5px solid #000;
+  border-radius: 5px;
+  padding: 0px 5px;
+  margin-bottom: 20px;
+}
+
+.fa-shopping-cart {
+  color: #000;
+  margin: 0px 20px 0px 0px;
+}
+#shopCart {
+  display: block;
+  border: 0.5px solid #000;
+  border-radius: 2px;
+  padding: 5px 15px;
+  background-color: #ffdd56;
+}
+#buy {
+  display: block;
+  border: 0.5px solid #000;
+  border-radius: 2px;
+  padding: 5px 15px;
+  background-color: #ffa500;
+}
+
+.reviews {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid #eee;
+}
+.chart {
+  width: 400px;
+  height: auto;
+}
+h2.rate {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.reviews .ratings {
+  display: inline;
+  margin: 0;
+  font-size: 13px;
+}
+.numReviews {
+  display: inline;
+  font-size: 14px;
+}
+
+.rateFeatures {
+  border-top: 2px solid #eee;
+  font-size: 13px;
+}
+.rateFeatures li {
+  padding: 5px;
+  font-size: 13px;
+}
+
+a#writeReview {
+  font-size: 14px;
+  margin: 20px 10px;
+  padding: 5px;
+  text-align: center;
+  border: 0.5px solid #eee;
+  background-color: #eee;
+}
+
+.custReviews {
+  display: block;
+  padding: 40px 30px;
+}
+
+.profile {
+  margin: 0;
+}
+.profileRate {
+  font-size: 12px;
+}
+
+.custReviews p {
+  font-size: 14px;
+}
+
+footer.second {
+  position: fixed;
+}

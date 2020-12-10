@@ -1,0 +1,190 @@
+.carousel {
+  background: #fff;
+}
+
+.product-carousel-header {
+  padding: 30px 14px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.product-carousel {
+  font-family: "Raleway", sans-serif;
+  padding: 40px 40px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.product-carousel .product {
+  box-sizing: border-box;
+  margin: 0 25px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.product-carousel .product-top {
+  width: 150px;
+  height: 150px;
+  display: inline;
+}
+.product-carousel,
+.product-carousel .product-image,
+.product-carousel {
+  margin: 0 0 10px 0;
+}
+.product-image img {
+  align-self: center;
+  width: 150px;
+  height: 150px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: row wrap;
+  text-decoration: none;
+  width: 100%;
+  align-items: center;
+}
+
+.checked {
+  color: orange;
+}
+
+.product-carousel .product-name {
+  font-weight: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: start;
+  width: 100%;
+  height: 60px;
+}
+
+a h4 {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 5px;
+}
+
+a h4:hover {
+  color: red;
+}
+.brand {
+  margin: 0;
+  float: left;
+  font-size: 11px;
+}
+.product-carousel .product-bottom {
+  -webkit-box-align: end;
+  align-items: center;
+  /* margin: 0 25px; */
+}
+.product-carousel span .product-prices {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-flex: 1;
+  flex: 1 0 100%;
+}
+
+.product-carousel .product-prices .price-save {
+  color: red;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 5px;
+}
+
+/** ARROWS **/
+i {
+  border: solid #000000;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  position: absolute;
+  top: calc(30% - 12px / 2);
+  cursor: pointer;
+}
+.right {
+  right: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  left: 20px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+/** SLICK SLIDER CSS **/
+/* Slider */
+.slick-slider {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
