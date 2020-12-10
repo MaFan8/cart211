@@ -1,0 +1,42 @@
+/* Sliding up and down animation */
+.slide-down {
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.3s 0.3s ease-out;
+  /*	will-change: all;*/
+}
+
+.slide-down.is-visible {
+  opacity: 1;
+  transform: translateY(0.1em);
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(2em);
+  transition: all 0.3s 0.3s ease-out;
+  /*	will-change: all;*/
+}
+
+.slide-up.is-visible {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+.multi {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+}
+.multi p {
+  margin-bottom: 20px;
+}
+
+/* ===== TABLET LAYOUT ===== */
+/* 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+  .multi {
+    column-count: 3;
+  }
+}

@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal cartSite</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Personal cartSite</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <div class="menuBox">
+      <nav class="menu">
+        <a href="index.html" class="active">home</a>
+        <a href="readings.html">readings</a>
+        <a href="exercises.html">exercises</a>
+        <a href="assignments.html">assignments</a>
+      </nav>
+    </div>
 
-<body>
-  <div class="menuBox">
-    <nav class="menu">
-      <a href="index.html" class="active">home</a>
-      <a href="readings.html">readings</a>
-      <a href="exercises.html">exercises</a>
-      <a href="assignments.html">assignments</a>
-    </nav>
-  </div>
-
-
-  <section class="header_lrg">
-    <header>
-      <h1>personal cartsite</h1>
-      <h2>creative network culture</h2>
-    </header>
-  </section>
-
-
-  <section class="bio">
-    <article>
-      <h2>stuff about</h2>
-      <h1>me me me me me...</h1>
-
-      <p>Hi, I am a cart, you may also refer me to as a wagon, richshaw... or a buggy but that's if you think carts are cute. I am a free-carter, I'm not a homebody type, and working for supermarkets or Ikea terrifies me. I love to travel and especially to remote places. Though sometimes these places are so secluded I end up getting stuck and cannot leave until someone finds me. A few years ago one of my bearings were wearing out on me so I figured it was time to persue my other interests.</p>
-      <p>I am currently studying to major in Ceramics and minor in Comuptation Arts. It seems rather sererindipitous that everything is online since I've decided to take more courses in Comuptation Arts. My skills in any coding are basic at best but I'm having a great time learning it.  </p>
-    </article>
-
-    <section class="selfCol4x">
-      <figure class="self">
-        <img src="images/ikeacart.jpg" alt="ikeaCart">
-        <div class="stats">
-          <h2 class="name">some industrial district</h2>
-        </div>
-      </figure>
-
-      <figure class="self">
-        <img src="images/waterCart.jpg" alt="waterCart">
-        <div class="stats">
-          <h2 class="name">swim day</h2>
-        </div>
-      </figure>
-
-      <figure class="self">
-        <img src="images/trippyCart.jpg" alt="trippyCart">
-        <div class="stats">
-          <h2 class="name">star gazing</h2>
-        </div>
-      </figure>
-
-      <figure class="self">
-        <img src="images/blingycart.jpg" alt="blingyCart">
-        <div class="stats">
-          <h2 class="name">formal wear</h2>
-        </div>
-      </figure>
+    <section class="header_lrg">
+      <header>
+        <h1 class="slide-down show-on-scroll">personal cartsite</h1>
+        <h2 class="slide-up show-on-scroll">creative network culture</h2>
+      </header>
     </section>
-  </section>
 
-  <section class="foot">
-    <footer>
-      <h3>feet goes here</h3>
-    </footer>
-  </section>
+    <section class="parent">
+      <article class="kids">
+        <figure id="self1">
+          <img src="images/ikeacart.jpg" alt="ikeaCart" />
+        </figure>
 
-</body>
+        <figure id="self2">
+          <img src="images/waterCart.jpg" alt="waterCart" />
+        </figure>
 
+        <figure id="self3">
+          <img src="images/trippyCart.jpg" alt="trippyCart" />
+        </figure>
+
+        <figure id="self4">
+          <img src="images/blingycart.jpg" alt="blingyCart" />
+        </figure>
+
+        <figure id="self5">
+          <img src="images/handles.jpg" alt="handles" />
+        </figure>
+
+        <article class="bio slide-up show-on-scroll">
+          <h2>stuff about</h2>
+          <h1>me me me me me...</h1>
+
+          <p>
+            Hi, I am a cart, you may also refer me to as a wagon, richshaw... or
+            a buggy but that's if you think carts are cute. I am a free-carter,
+            I'm not a homebody type, and working for supermarkets or Ikea
+            terrifies me. I love to travel and especially to remote places.
+            Though sometimes these places are so secluded I end up getting stuck
+            and cannot leave until someone finds me. A few years ago one of my
+            bearings were wearing out on me so I figured it was time to persue
+            my other interests.
+          </p>
+          <p>
+            I am currently studying to major in Ceramics and minor in
+            Comuptation Arts. It seems rather sererindipitous that everything is
+            online since I've decided to take more courses in Comuptation Arts.
+            My skills in any coding are basic at best but I'm having a great
+            time learning it.
+          </p>
+        </article>
+
+        <footer class="foot">
+          <h3>feet goes here</h3>
+        </footer>
+      </article>
+    </section>
+
+    <!-- scripts -->
+    <script src="javascripts/scroll-on-scroll.js"></script>
+  </body>
 </html>
